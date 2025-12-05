@@ -10,10 +10,6 @@ __pycache__/
 venv/
 raglc_env/
 
-# Data & vector DB
-data/
-chroma_db/
-
 # Model weights
 *.pt
 *.bin
