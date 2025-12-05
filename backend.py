@@ -1,7 +1,7 @@
 # backend.py
 from fastapi import FastAPI
 from pydantic import BaseModel
-from app import answer_query  # import RAG function from core app.py
+from rag_core import answer_query  # import RAG function from core app.py
 
 app = FastAPI(title="ML RAG Backend")
 
