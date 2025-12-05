@@ -18,8 +18,4 @@ raglc_env/
 .ipynb_checkpoints/
 .vscode/
 
-raglc_env/
-chroma_db/
-data/
-__pycache__/
 

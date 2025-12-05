@@ -1,0 +1,542 @@
+[
+  {
+    "id": "Q131447973",
+    "title": "language-conditioned imitation learning",
+    "description": "training robots or agents to perform tasks based on natural language instructions. Instead of just watching and copying, the agent must interpret textual or spoken instructions to adapt its behavior or choose the right action sequence.",
+    "url": "http://www.wikidata.org/entity/Q131447973"
+  },
+  {
+    "id": "Q112889254",
+    "title": "Trust Region Policy Optimization",
+    "description": "",
+    "url": "http://www.wikidata.org/entity/Q112889254"
+  },
+  {
+    "id": "Q112150238",
+    "title": "Proximal Policy Optimization",
+    "description": "model-free reinforcement learning algorithm",
+    "url": "http://www.wikidata.org/entity/Q112150238"
+  },
+  {
+    "id": "Q2664563",
+    "title": "Q-learning",
+    "description": "model-free reinforcement learning algorithm",
+    "url": "http://www.wikidata.org/entity/Q2664563"
+  },
+  {
+    "id": "Q131431339",
+    "title": "end-to-end robot learning",
+    "description": "paradigm in robotics where the entire process from sensing the environment to executing actions is learned through a single, integrated neural network or a series of interconnected models",
+    "url": "http://www.wikidata.org/entity/Q131431339"
+  },
+  {
+    "id": "Q17081532",
+    "title": "Optical braille recognition",
+    "description": "automated recognition of braille characters",
+    "url": "http://www.wikidata.org/entity/Q17081532"
+  },
+  {
+    "id": "Q3099089",
+    "title": "intelligent character recognition",
+    "description": "computer recognition of written text",
+    "url": "http://www.wikidata.org/entity/Q3099089"
+  },
+  {
+    "id": "Q1192011",
+    "title": "MICR",
+    "description": "character-recognition technology",
+    "url": "http://www.wikidata.org/entity/Q1192011"
+  },
+  {
+    "id": "Q118151690",
+    "title": "contrastive Learning",
+    "description": "",
+    "url": "http://www.wikidata.org/entity/Q118151690"
+  },
+  {
+    "id": "Q123202106",
+    "title": "feature distillation",
+    "description": "machine learning method to transfer feature knowledge from a large model to a smaller one",
+    "url": "http://www.wikidata.org/entity/Q123202106"
+  },
+  {
+    "id": "Q4677561",
+    "title": "active learning",
+    "description": "machine learning strategy in which a learning algorithm interactively queries for new labels",
+    "url": "http://www.wikidata.org/entity/Q4677561"
+  },
+  {
+    "id": "Q2518735",
+    "title": "artificial immune system",
+    "description": "Class of rule-based machine learning systems",
+    "url": "http://www.wikidata.org/entity/Q2518735"
+  },
+  {
+    "id": "Q25304494",
+    "title": "Sparse dictionary learning",
+    "description": "Representation learning method",
+    "url": "http://www.wikidata.org/entity/Q25304494"
+  },
+  {
+    "id": "Q5535480",
+    "title": "geometric feature learning",
+    "description": "technique combining machine learning and computer vision to solve visual tasks",
+    "url": "http://www.wikidata.org/entity/Q5535480"
+  },
+  {
+    "id": "Q4874476",
+    "title": "Bayesian multivariate linear regression",
+    "description": "Bayesian approach to multivariate linear regression",
+    "url": "http://www.wikidata.org/entity/Q4874476"
+  },
+  {
+    "id": "Q124742024",
+    "title": "imitation learning",
+    "description": "machine learning technique where agents learn from demonstrations",
+    "url": "http://www.wikidata.org/entity/Q124742024"
+  },
+  {
+    "id": "Q124741956",
+    "title": "kinesthetic guidance",
+    "description": "",
+    "url": "http://www.wikidata.org/entity/Q124741956"
+  },
+  {
+    "id": "Q6086067",
+    "title": "Isomap",
+    "description": "simple heuristic algorithm for estimating the intrinsic geometry of a data manifold based on a rough estimate of each data point\u2019s neighbors on the manifold",
+    "url": "http://www.wikidata.org/entity/Q6086067"
+  },
+  {
+    "id": "Q112692926",
+    "title": "deep transfer learning",
+    "description": "set of methods involving transfer learning and deep neural networks",
+    "url": "http://www.wikidata.org/entity/Q112692926"
+  },
+  {
+    "id": "Q105106879",
+    "title": "unsupervised clustering",
+    "description": "type of clustering",
+    "url": "http://www.wikidata.org/entity/Q105106879"
+  },
+  {
+    "id": "Q25051436",
+    "title": "archetypal analysis",
+    "description": "",
+    "url": "http://www.wikidata.org/entity/Q25051436"
+  },
+  {
+    "id": "Q1259145",
+    "title": "independent component analysis",
+    "description": "in signal processing, a computational method",
+    "url": "http://www.wikidata.org/entity/Q1259145"
+  },
+  {
+    "id": "Q114737329",
+    "title": "Quantitative Structure\u2013Property Relationship",
+    "description": "",
+    "url": "http://www.wikidata.org/entity/Q114737329"
+  },
+  {
+    "id": "Q50327360",
+    "title": "proteochemometrics",
+    "description": "field of research",
+    "url": "http://www.wikidata.org/entity/Q50327360"
+  },
+  {
+    "id": "Q766383",
+    "title": "quantitative structure-activity relationship",
+    "description": "quantitative prediction of the biological, ecotoxicological or pharmaceutical activity of a molecule",
+    "url": "http://www.wikidata.org/entity/Q766383"
+  },
+  {
+    "id": "Q135214674",
+    "title": "reinforcement learning from AI feedback",
+    "description": "",
+    "url": "http://www.wikidata.org/entity/Q135214674"
+  },
+  {
+    "id": "Q125937543",
+    "title": "meta-reinforcement learning",
+    "description": "",
+    "url": "http://www.wikidata.org/entity/Q125937543"
+  },
+  {
+    "id": "Q115570683",
+    "title": "reinforcement learning from human feedback",
+    "description": "variant of reinforcement learning",
+    "url": "http://www.wikidata.org/entity/Q115570683"
+  },
+  {
+    "id": "Q113840014",
+    "title": "policy-gradient method",
+    "description": "class of reinforcement learning algorithms",
+    "url": "http://www.wikidata.org/entity/Q113840014"
+  },
+  {
+    "id": "Q85786957",
+    "title": "Multi-agent reinforcement learning",
+    "description": "sub-field of reinforcement learning",
+    "url": "http://www.wikidata.org/entity/Q85786957"
+  },
+  {
+    "id": "Q65079156",
+    "title": "deep reinforcement learning",
+    "description": "techniques combining deep learning and reinforcement learning principles to create efficient machine learning algorithms",
+    "url": "http://www.wikidata.org/entity/Q65079156"
+  },
+  {
+    "id": "Q63788448",
+    "title": "model-free reinforcement learning",
+    "description": "type of machine learning algorithm",
+    "url": "http://www.wikidata.org/entity/Q63788448"
+  },
+  {
+    "id": "Q30589144",
+    "title": "end-to-end reinforcement learning",
+    "description": "paradigm in machine learning where the entire process from input to output is learned through a single, integrated neural network or a series of interconnected models, in contrast to having independent subsystems",
+    "url": "http://www.wikidata.org/entity/Q30589144"
+  },
+  {
+    "id": "Q19246213",
+    "title": "Domain Adaptation",
+    "description": "field associated with machine learning and transfer learning",
+    "url": "http://www.wikidata.org/entity/Q19246213"
+  },
+  {
+    "id": "Q7452468",
+    "title": "sequence labeling",
+    "description": "pattern recognition",
+    "url": "http://www.wikidata.org/entity/Q7452468"
+  },
+  {
+    "id": "Q2440634",
+    "title": "handwriting recognition",
+    "description": "ability of a computer to receive and interpret intelligible handwritten input",
+    "url": "http://www.wikidata.org/entity/Q2440634"
+  },
+  {
+    "id": "Q167555",
+    "title": "optical character recognition",
+    "description": "computer recognition of visual text",
+    "url": "http://www.wikidata.org/entity/Q167555"
+  },
+  {
+    "id": "Q466303",
+    "title": "boosting",
+    "description": "ensemble meta-algorithm for reducing bias and variance in machine learning",
+    "url": "http://www.wikidata.org/entity/Q466303"
+  },
+  {
+    "id": "Q135271240",
+    "title": "neural field",
+    "description": "a neural field is a type of neural network that models a mathematical field in a continuous and differentiable way",
+    "url": "http://www.wikidata.org/entity/Q135271240"
+  },
+  {
+    "id": "Q131375457",
+    "title": "fleet learning",
+    "description": "method in machine learning, where multiple devices or vehicles (a \"fleet\") share data and learning experiences",
+    "url": "http://www.wikidata.org/entity/Q131375457"
+  },
+  {
+    "id": "Q123277600",
+    "title": "privacy-preserving machine learning",
+    "description": "",
+    "url": "http://www.wikidata.org/entity/Q123277600"
+  },
+  {
+    "id": "Q120799625",
+    "title": "graph learning",
+    "description": "machine learning approach for graph data",
+    "url": "http://www.wikidata.org/entity/Q120799625"
+  },
+  {
+    "id": "Q117879902",
+    "title": "imbalanced learning",
+    "description": "machine learning from imbalanced dataset",
+    "url": "http://www.wikidata.org/entity/Q117879902"
+  },
+  {
+    "id": "Q114958157",
+    "title": "continual learning",
+    "description": "machine learning technique",
+    "url": "http://www.wikidata.org/entity/Q114958157"
+  },
+  {
+    "id": "Q113506252",
+    "title": "personalized machine learning",
+    "description": "machine learning considering the differences among individuals",
+    "url": "http://www.wikidata.org/entity/Q113506252"
+  },
+  {
+    "id": "Q113127963",
+    "title": "semi-supervised and unsupervised learning",
+    "description": "field of research",
+    "url": "http://www.wikidata.org/entity/Q113127963"
+  },
+  {
+    "id": "Q111460849",
+    "title": "Pathways",
+    "description": "Machine learning (ML) architecture for distributed cluster computing by Google Research",
+    "url": "http://www.wikidata.org/entity/Q111460849"
+  },
+  {
+    "id": "Q110797734",
+    "title": "few-shot learning",
+    "description": "machine learning approach that enables a system to learn new tasks or recognize new objects from only a few examples or demonstrations, rather than requiring extensive data",
+    "url": "http://www.wikidata.org/entity/Q110797734"
+  },
+  {
+    "id": "Q108899704",
+    "title": "BYY Harmony Learning",
+    "description": "",
+    "url": "http://www.wikidata.org/entity/Q108899704"
+  },
+  {
+    "id": "Q108515195",
+    "title": "declarative machine learning",
+    "description": "machine learning approach",
+    "url": "http://www.wikidata.org/entity/Q108515195"
+  },
+  {
+    "id": "Q107069002",
+    "title": "gossip learning",
+    "description": "",
+    "url": "http://www.wikidata.org/entity/Q107069002"
+  },
+  {
+    "id": "Q96416030",
+    "title": "zero-shot learning",
+    "description": "problem setup in machine learning, where at test time, a learner observes samples from classes that were not observed during training, and needs to predict the class they belong to",
+    "url": "http://www.wikidata.org/entity/Q96416030"
+  },
+  {
+    "id": "Q83512991",
+    "title": "machine learning in physics",
+    "description": "applications of machine learning to quantum physics",
+    "url": "http://www.wikidata.org/entity/Q83512991"
+  },
+  {
+    "id": "Q77562367",
+    "title": "self-supervised learning",
+    "description": "class of machine learning techniques in which a task is solved based on pseudo-labels which help initialize weights the weight, then the actual task is performed with supervised or unsupervised learning",
+    "url": "http://www.wikidata.org/entity/Q77562367"
+  },
+  {
+    "id": "Q74253442",
+    "title": "knowledge distillation",
+    "description": "machine learning method to transfer knowledge from a large model to a smaller one",
+    "url": "http://www.wikidata.org/entity/Q74253442"
+  },
+  {
+    "id": "Q70582490",
+    "title": "machine learning in video games",
+    "description": "use of machine learning in video games",
+    "url": "http://www.wikidata.org/entity/Q70582490"
+  },
+  {
+    "id": "Q51666139",
+    "title": "interactive machine learning",
+    "description": "machine learning that interacts will humans",
+    "url": "http://www.wikidata.org/entity/Q51666139"
+  },
+  {
+    "id": "Q50818671",
+    "title": "federated learning",
+    "description": "method for artificial intelligence",
+    "url": "http://www.wikidata.org/entity/Q50818671"
+  },
+  {
+    "id": "Q45318647",
+    "title": "image-to-image translation",
+    "description": "machine learning technique to convert an image to another image",
+    "url": "http://www.wikidata.org/entity/Q45318647"
+  },
+  {
+    "id": "Q43967068",
+    "title": "automated machine learning",
+    "description": "process of automating the end-to-end process of machine learning",
+    "url": "http://www.wikidata.org/entity/Q43967068"
+  },
+  {
+    "id": "Q41589189",
+    "title": "sequence-to-sequence learning",
+    "description": "family of machine learning approaches",
+    "url": "http://www.wikidata.org/entity/Q41589189"
+  },
+  {
+    "id": "Q30314784",
+    "title": "machine learning in bioinformatics",
+    "description": "Software for understanding biological data",
+    "url": "http://www.wikidata.org/entity/Q30314784"
+  },
+  {
+    "id": "Q28324931",
+    "title": "incremental learning",
+    "description": "method of machine learning",
+    "url": "http://www.wikidata.org/entity/Q28324931"
+  },
+  {
+    "id": "Q28324910",
+    "title": "rule-based machine learning",
+    "description": "machine learning methods that try to develop rules that are to be applied in particular contexts",
+    "url": "http://www.wikidata.org/entity/Q28324910"
+  },
+  {
+    "id": "Q25212666",
+    "title": "M-Theory",
+    "description": "learning framework inspired by feed-forward processing in the ventral stream of visual cortex and originally developed for recognition and classification of objects in visual scenes",
+    "url": "http://www.wikidata.org/entity/Q25212666"
+  },
+  {
+    "id": "Q25052564",
+    "title": "multimodal learning",
+    "description": "machine learning combining different information resources, such as images and text",
+    "url": "http://www.wikidata.org/entity/Q25052564"
+  },
+  {
+    "id": "Q25048660",
+    "title": "multiple kernel learning",
+    "description": "machine learning methods that use a predefined set of kernels and learn an optimal linear or non-linear combination of kernels as part of the algorithm",
+    "url": "http://www.wikidata.org/entity/Q25048660"
+  },
+  {
+    "id": "Q20312394",
+    "title": "adversarial machine learning",
+    "description": "machine learning technique that attempts to prevent models being fooled by supplying deceptive input",
+    "url": "http://www.wikidata.org/entity/Q20312394"
+  },
+  {
+    "id": "Q18811578",
+    "title": "quantum machine learning",
+    "description": "Quantum Machine Learning combines quantum computing and ML to enhance algorithms, leveraging unique quantum properties, like superposition and entanglement , for efficient problem-solving.",
+    "url": "http://www.wikidata.org/entity/Q18811578"
+  },
+  {
+    "id": "Q17013334",
+    "title": "feature learning",
+    "description": "a set of techniques that learn a feature: a transformation of raw data input to a representation that can be effectively exploited in machine learning tasks",
+    "url": "http://www.wikidata.org/entity/Q17013334"
+  },
+  {
+    "id": "Q10861030",
+    "title": "linear regression",
+    "description": "statistical approach for modeling the relationship between a scalar dependent variable and one or more explanatory variables",
+    "url": "http://www.wikidata.org/entity/Q10861030"
+  },
+  {
+    "id": "Q7625208",
+    "title": "structured prediction",
+    "description": "supervised machine learning techniques",
+    "url": "http://www.wikidata.org/entity/Q7625208"
+  },
+  {
+    "id": "Q7604413",
+    "title": "statistical relational learning",
+    "description": "subdiscipline of artificial intelligence",
+    "url": "http://www.wikidata.org/entity/Q7604413"
+  },
+  {
+    "id": "Q7353390",
+    "title": "robot learning",
+    "description": "machine learning for robots",
+    "url": "http://www.wikidata.org/entity/Q7353390"
+  },
+  {
+    "id": "Q7239820",
+    "title": "preference learning",
+    "description": "Subfield of machine learning",
+    "url": "http://www.wikidata.org/entity/Q7239820"
+  },
+  {
+    "id": "Q7094097",
+    "title": "online machine learning",
+    "description": "a method where a model is trained incrementally on data as it becomes available, in contrast to batch learning where the entire dataset is used at once",
+    "url": "http://www.wikidata.org/entity/Q7094097"
+  },
+  {
+    "id": "Q7092335",
+    "title": "one-shot learning",
+    "description": "object categorization problem that aims to learn information about object categories from one training sample",
+    "url": "http://www.wikidata.org/entity/Q7092335"
+  },
+  {
+    "id": "Q7079636",
+    "title": "offline machine learning",
+    "description": "method of machine learning",
+    "url": "http://www.wikidata.org/entity/Q7079636"
+  },
+  {
+    "id": "Q7049464",
+    "title": "nonlinear dimensionality reduction",
+    "description": "summary of algorithms for nonlinear dimensionality reduction",
+    "url": "http://www.wikidata.org/entity/Q7049464"
+  },
+  {
+    "id": "Q6934509",
+    "title": "multi-task learning",
+    "description": "form of machine learning where a model learns multiple tasks",
+    "url": "http://www.wikidata.org/entity/Q6934509"
+  },
+  {
+    "id": "Q6822311",
+    "title": "meta-learning",
+    "description": "subfield of machine learning where automatic learning algorithms are applied to metadata about machine learning experiments",
+    "url": "http://www.wikidata.org/entity/Q6822311"
+  },
+  {
+    "id": "Q6027324",
+    "title": "transfer learning",
+    "description": "research problem in machine learning (ML) that focuses on storing knowledge gained while solving one problem and applying it to a different but related problem",
+    "url": "http://www.wikidata.org/entity/Q6027324"
+  },
+  {
+    "id": "Q1152135",
+    "title": "unsupervised learning",
+    "description": "machine learning technique",
+    "url": "http://www.wikidata.org/entity/Q1152135"
+  },
+  {
+    "id": "Q910067",
+    "title": "chemometrics",
+    "description": "science of extracting information from chemical systems by data-driven means",
+    "url": "http://www.wikidata.org/entity/Q910067"
+  },
+  {
+    "id": "Q830687",
+    "title": "reinforcement learning",
+    "description": "type of machine learning where an agent learns how to behave in an environment by performing actions and receiving rewards or penalties in return, aiming to maximize the cumulative reward over time",
+    "url": "http://www.wikidata.org/entity/Q830687"
+  },
+  {
+    "id": "Q652594",
+    "title": "hierarchical temporal memory",
+    "description": "biological theory of intelligence",
+    "url": "http://www.wikidata.org/entity/Q652594"
+  },
+  {
+    "id": "Q378859",
+    "title": "pattern recognition",
+    "description": "branch of machine learning",
+    "url": "http://www.wikidata.org/entity/Q378859"
+  },
+  {
+    "id": "Q245652",
+    "title": "ensemble learning",
+    "description": "in machine learning, the use of multiple algorithms to obtain better predictive performance than from any of the constituent learning algorithms alone",
+    "url": "http://www.wikidata.org/entity/Q245652"
+  },
+  {
+    "id": "Q133580",
+    "title": "explanation-based learning",
+    "description": "form of machine learning",
+    "url": "http://www.wikidata.org/entity/Q133580"
+  },
+  {
+    "id": "Q2539",
+    "title": "machine learning",
+    "description": "scientific study of algorithms and statistical models that computer systems use to perform tasks without explicit instructions",
+    "url": "http://www.wikidata.org/entity/Q2539"
+  }
+]
