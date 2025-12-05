@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+
+# Virtual environment
+venv/
+raglc_env/
+
+# Data & vector DB
+data/
+chroma_db/
+
+# Model weights
+*.pt
+*.bin
+
+# Jupyter / VSCode
+.ipynb_checkpoints/
+.vscode/
+
+raglc_env/
+chroma_db/
+data/
+__pycache__/
+
