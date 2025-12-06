@@ -18,4 +18,5 @@ raglc_env/
 .ipynb_checkpoints/
 .vscode/
 
-
+chromadb/
+data/
