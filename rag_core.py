@@ -1,7 +1,10 @@
-# app.py (core RAG logic - LOCAL TRANSFORMERS VERSION)
+# rag_core.py (core RAG logic - LOCAL TRANSFORMERS VERSION)
 import json
 from pathlib import Path
 import os
+
+# IMPORTANT FOR RENDER: store HF models in /tmp (ephemeral disk)
+os.environ["HF_HOME"] = "/tmp"
 
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
