@@ -18,3 +18,7 @@ requests
 
 # Frontend
 gradio
+
+gunicorn
+pydantic
+python-dotenv
