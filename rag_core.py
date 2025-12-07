@@ -1,4 +1,4 @@
-# rag_core.py (core RAG logic - LOCAL TRANSFORMERS VERSION)
+# app.py (core RAG logic - LOCAL TRANSFORMERS VERSION)
 import json
 from pathlib import Path
 import os
@@ -66,7 +66,7 @@ def get_or_create_vectorstore(force_recreate=False):
         split_docs = splitter.split_documents(docs)
 
         vectordb = Chroma.from_documents(split_docs, embeddings, persist_directory=PERSIST_DIR)
-        vectordb.persist()
+
     else:
         print("Loading existing vector store...")
         vectordb = Chroma(persist_directory=PERSIST_DIR, embedding_function=embeddings)

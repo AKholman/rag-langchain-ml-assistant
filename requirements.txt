@@ -1,24 +1,15 @@
-# LangChain packages
-langchain
+langchain>=1.0.0
 langchain-core
 langchain-community
+langchain-openai
 langchain-huggingface
 sentence-transformers
 chromadb
-
-# Local LLM (Option 2)
-transformers
-torch
-accelerate
-
-# Backend / API
 fastapi
 uvicorn
-requests
-
-# Frontend
 gradio
-
-gunicorn
-pydantic
-python-dotenv
+huggingface-hub
+openai
+requests
+transformers
+torch
