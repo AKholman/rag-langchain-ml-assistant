@@ -4,7 +4,9 @@ services:
     env: python
     repo: https://github.com/AKholman/rag-langchain-ml-assistant.git
     branch: deployment
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
     startCommand: ./start.sh
     envVars:
       - key: PYTHON_VERSION
