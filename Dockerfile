@@ -1,45 +1,26 @@
-# -----------------------------
-# Base image
-# -----------------------------
+# Use official HF image
 FROM python:3.10
 
-# Avoid interactive prompts
-ENV DEBIAN_FRONTEND=noninteractive
-
-# -----------------------------
-# Install system dependencies
-# -----------------------------
-RUN apt-get update && apt-get install -y \
-    git \
-    && rm -rf /var/lib/apt/lists/*
-
-# -----------------------------
-# Set working directory
-# -----------------------------
+# Set working dir
 WORKDIR /app
 
-# -----------------------------
-# Copy requirements
-# -----------------------------
+# Install dependencies first (layer cache)
 COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# -----------------------------
-# Install Python packages
-# -----------------------------
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+# Create data dirs inside container
+RUN mkdir -p /data/hf_home /data/chroma_db /data
 
-# -----------------------------
-# Copy all project files
-# -----------------------------
-COPY . .
+# Copy application files
+COPY backend.py .
+COPY rag_core.py .
 
-# -----------------------------
-# Expose FastAPI port
-# -----------------------------
-EXPOSE 8000
+# Copy data folders into /data inside container
+COPY data/ /data/
+COPY chroma_db/ /data/chroma_db/
 
-# -----------------------------
-# Start backend API
-# -----------------------------
-CMD ["uvicorn", "backend:app", "--host", "0.0.0.0", "--port", "8000"]
+# Expose HF space port
+EXPOSE 7860
+
+# Run FastAPI server
+CMD ["uvicorn", "backend:app", "--host", "0.0.0.0", "--port", "7860"]

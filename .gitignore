@@ -6,7 +6,7 @@ __pycache__/
 *.sqlite3
 *.db
 !chroma_db/
-
+.DS_Store
 # Virtual environment
 venv/
 raglc_env/
