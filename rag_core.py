@@ -4,7 +4,8 @@ from pathlib import Path
 import os
 
 # IMPORTANT FOR RENDER: store HF models in /tmp (ephemeral disk)
-os.environ["HF_HOME"] = "/tmp"
+os.environ["HF_HOME"] = "/data/hf_home"
+Path("/data/hf_home").mkdir(parents=True, exist_ok=True)
 
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -19,8 +20,8 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 # -----------------------------
 # CONFIG
 # -----------------------------
-DATA_FILE = Path("data/wikidata_ml.json")
-PERSIST_DIR = "chroma_db"
+DATA_FILE = Path("/data/wikidata_ml.json")
+PERSIST_DIR = "/data/chroma_db"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 LLM_MODEL = "google/flan-t5-large"   # local LLM model
