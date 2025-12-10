@@ -1,26 +1,32 @@
-# Use official HF image
-FROM python:3.10
+# Use a Python base image (ensure it's compatible with 'torch')
+FROM python:3.11-slim
 
-# Set working dir
+# Set environment variable for Hugging Face model cache (good practice for Spaces)
+ENV HF_HOME /data/hf_home
+
+# Set working directory
 WORKDIR /app
 
-# Install dependencies first (layer cache)
+# Copy requirements and install them first for layer caching
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Create data dirs inside container
-RUN mkdir -p /data/hf_home /data/chroma_db /data
+# Copy the rest of the application files
+COPY . .
 
-# Copy application files
-COPY backend.py .
-COPY rag_core.py .
+# Create directories for data and model cache. Note: /data is writable on HF Spaces.
+RUN mkdir -p /data/hf_home /app/data /app/chromodb 
 
-# Copy data folders into /data inside container
-COPY data/ /data/
-COPY chroma_db/ /data/chroma_db/
+# !!! CRITICAL CHANGE: Run the scraper to populate the initial data !!!
+# This runs once during the build process.
+RUN python scraper.py
 
-# Expose HF space port
-EXPOSE 7860
+# Expose the port that the FastAPI app will run on
+EXPOSE 8000
 
-# Run FastAPI server
-CMD ["uvicorn", "backend:app", "--host", "0.0.0.0", "--port", "7860"]
+# Command to run the FastAPI application using uvicorn/gunicorn
+# The backend.py file uses os.environ.get("PORT", 7860) but we will use the default uvicorn behavior 
+# which is simpler when EXPOSE is set.
+# Using 'gunicorn' with 'uvicorn.workers.UvicornWorker' is a better production practice than raw uvicorn.run()
+# This command starts the backend.py application on 0.0.0.0:8000
+CMD ["gunicorn", "backend:app", "--workers", "1", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000"]
