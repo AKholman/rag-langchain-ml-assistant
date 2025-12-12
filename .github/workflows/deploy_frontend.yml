@@ -1,0 +1,26 @@
+name: 🎨 Deploy Gradio Frontend
+
+on:
+  push:
+    branches:
+      - deployment
+    paths:
+      - 'app.py' 
+      - 'frontend_requirements.txt'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to Hugging Face Frontend Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          # The remote URL uses the token for authentication
+          git push --force https://Alex-Khol:$HF_TOKEN@huggingface.co/spaces/Alex-Khol/rag-gradio-frontend deployment:main

@@ -1,0 +1,30 @@
+name: 🐳 Deploy ML RAG Backend (Docker)
+
+on:
+  push:
+    branches:
+      - deployment 
+    paths:
+      - 'backend.py'
+      - 'rag_core.py'
+      - 'requirements.txt'
+      - 'Dockerfile'
+      - 'scraper.py'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to Hugging Face Backend Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git lfs install
+          # The remote URL uses the token for authentication
+          git push --force https://Alex-Khol:$HF_TOKEN@huggingface.co/spaces/Alex-Khol/rag-api-backend deployment:main

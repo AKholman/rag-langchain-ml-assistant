@@ -1,0 +1,3 @@
+# Lighter requirements for the Gradio frontend space
+gradio>=4.26.0
+requests>=2.32.0
