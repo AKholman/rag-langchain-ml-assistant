@@ -1,5 +1,4 @@
-# FINAL ATTEMPT to resolve HfFolder import issue
-# Lighter requirements for the Gradio frontend space
-gradio>=4.30.0
-huggingface-hub>=0.20.0
+# Strict pinning to resolve the known HfFolder dependency conflict
+gradio==4.38.0
+huggingface-hub==0.23.0
 requests>=2.32.0
