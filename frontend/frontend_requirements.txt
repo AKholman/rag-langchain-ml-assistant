@@ -1,4 +1,5 @@
+# FINAL ATTEMPT to resolve HfFolder import issue
 # Lighter requirements for the Gradio frontend space
 gradio>=4.30.0
-#huggingface-hub>=0.20.0
+huggingface-hub>=0.20.0
 requests>=2.32.0
