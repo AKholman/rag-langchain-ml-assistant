@@ -20,8 +20,8 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 # -----------------------------
 # CONFIG
 # -----------------------------
-DATA_FILE = Path("/data/wikidata_ml.json")
-PERSIST_DIR = "/data/chroma_db"
+DATA_FILE = Path("./data/wikidata_ml.json") 
+PERSIST_DIR = "./chroma_db" 
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 LLM_MODEL = "google/flan-t5-large"   # local LLM model
