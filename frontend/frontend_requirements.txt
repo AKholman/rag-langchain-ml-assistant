@@ -1,5 +1,5 @@
 # Relaxing Gradio pin, but strictly constraining huggingface-hub to a version
 # known to contain the HfFolder module, fixing the ImportError.
-gradio==4.12.0
-huggingface-hub==0.20.3
+gradio>=4.30.0
+huggingface-hub>=0.23.0
 requests>=2.32.0
