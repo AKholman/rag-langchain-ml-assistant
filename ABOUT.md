@@ -3,7 +3,7 @@
 
 This project implements a complete Retrieval-Augmented Generation (RAG) system featuring a fully decoupled, production-ready architecture. It is deployed across two separate Hugging Face Spaces: a Dockerized FastAPI backend and a Gradio frontend.
 
-The core system utilizes local, open-source models for all heavy computation, ensuring full control over the RAG pipeline without relying on external, paid API services (like OpenAI).
+The core system utilizes local, open-source models for all heavy computation, ensuring full control over the RAG pipeline without relying on external, paid API services.
 
 
 ✨ Key Features & Components
@@ -67,3 +67,6 @@ project/
 4. Augmentation & Generation: The retrieved context and the user's question are combined into a final prompt and sent to the local FLAN-T5-Large LLM.
 5. Response: The LLM's final answer, along with the source documents, is returned through FastAPI back to the Gradio UI.
 
+✅ Project Conclusions:
+
+This project delivers a fully decoupled, production-grade Retrieval-Augmented Generation (RAG) system deployed across independent backend and frontend services. The FastAPI backend runs all heavy RAG components—including embeddings, vector search, and local LLM inference—inside a Dockerized Hugging Face Space. A separate Gradio frontend provides a user-friendly chat interface that communicates with the backend via FastAPI. Automated CI/CD pipelines ensure reliable, isolated deployments and enable rapid updates with minimal manual work. The system uses entirely local, open-source models, providing full control over performance, data security, and cost.
