@@ -6,6 +6,7 @@ colorTo: blue
 sdk: gradio
 sdk_version: "4.26.0" # Use a compatible Gradio version
 app_file: app.py       # Critical: Specifies the file to run
+python_version: "3.11"
 pinned: false
 ---
 
