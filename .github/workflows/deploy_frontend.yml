@@ -5,8 +5,7 @@ on:
     branches:
       - deployment
     paths:
-      - 'app.py' 
-      - 'frontend_requirements.txt'
+      - 'frontend/**' # Watches all files inside the frontend folder
 
 jobs:
   deploy:
@@ -18,9 +17,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Push to Hugging Face Frontend Space
+      - name: Push Frontend Folder to HF Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          # The remote URL uses the token for authentication
-          git push --force https://Alex-Khol:$HF_TOKEN@huggingface.co/spaces/Alex-Khol/rag-gradio-frontend deployment:main
+          # Configure Git credentials
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add the HF Space as a remote named 'hf'
+          git remote add hf https://Alex-Khol:$HF_TOKEN@huggingface.co/spaces/Alex-Khol/rag-gradio-frontend
+          
+          # Create a temporary branch containing only the contents of 'frontend/'
+          git subtree split --prefix frontend -b hf-frontend-split
+          
+          # Force push the contents of the temporary branch to the Space's main branch
+          git push hf hf-frontend-split:main --force

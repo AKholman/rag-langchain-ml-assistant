@@ -5,11 +5,7 @@ on:
     branches:
       - deployment 
     paths:
-      - 'backend.py'
-      - 'rag_core.py'
-      - 'requirements.txt'
-      - 'Dockerfile'
-      - 'scraper.py'
+      - 'backend/**' # Watches all files inside the backend folder
 
 jobs:
   deploy:
@@ -21,10 +17,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Push to Hugging Face Backend Space
+      - name: Push Backend Folder to HF Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
+          # Configure Git credentials
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Use LFS for models (needed for Docker space)
           git lfs install
-          # The remote URL uses the token for authentication
-          git push --force https://Alex-Khol:$HF_TOKEN@huggingface.co/spaces/Alex-Khol/rag-api-backend deployment:main
+          
+          # Add the HF Space as a remote named 'hf'
+          git remote add hf https://Alex-Khol:$HF_TOKEN@huggingface.co/spaces/Alex-Khol/rag-api-backend
+          
+          # Create a temporary branch containing only the contents of 'backend/'
+          git subtree split --prefix backend -b hf-backend-split
+          
+          # Force push the contents of the temporary branch to the Space's main branch
+          git push hf hf-backend-split:main --force
